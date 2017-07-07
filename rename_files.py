@@ -31,6 +31,8 @@ def change_name(mypath, file_list):
 
     for file in file_list:
 
+
+        # could also use .translate(None, "0123456789"
         new_name = ''.join([i for i in file if not i.isdigit()])
 
         src = mypath + '/' + file
